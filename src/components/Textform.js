@@ -13,6 +13,8 @@ export default function Textform(props) {
   };
   const handleCopyOnClick = () =>{
     console.log("Copy is clicked");
+    navigator.clipboard.writeText(text);
+    alert("Copied to Clipboard!");
   }
   return (
     <div>
